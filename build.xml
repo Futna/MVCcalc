@@ -31,7 +31,7 @@ includeantruntime="false">
 <formatter type="brief" usefile="false"/>
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/*MODELTEST.class"/>
+<include name="**/*MODELTest.class"/>
 </fileset>
 </batchtest>
 </junit>
