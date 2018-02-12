@@ -43,7 +43,8 @@ public class CONTROLLER {
 	        		viewObj.setResultNum(modelObj.getResultValue());
 	              
 	          } catch (NumberFormatException nfex) {
-		             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+		           //  JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 	      }
 	  }
@@ -66,7 +67,8 @@ public class CONTROLLER {
 	        		viewObj.setResultNum(modelObj.getResultValue());
 	              
 	          } catch (NumberFormatException nfex) {
-		             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+		         //    JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 	      }
 	  }
@@ -88,7 +90,8 @@ public class CONTROLLER {
 	        		viewObj.setResultNum(modelObj.getResultValue());
 	              
 	          } catch (NumberFormatException nfex) {
-		             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+		           //  JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 	      }
 	  }
@@ -105,14 +108,18 @@ public class CONTROLLER {
 	        	  FirstNum =viewObj.getFirstNum();
 		        	  SecondNum = viewObj.getSecondNum();
 	        		modelObj.divNum(FirstNum,SecondNum);
-	        		if(modelObj.flag==true)viewObj.clrResultNum();
+	        		if(modelObj.flag==true) {
+	        			viewObj.clrResultNum();
+	        		    viewObj.setResultNumS("Not Valid");
+	        		}
 	        		else {
 	        			viewObj.setResultNum(modelObj.getResultValue());
 	        		}
 	          }
 	          
 	          catch (NumberFormatException n) {
-		             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+		           //  JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 	      }
 	  }
@@ -132,7 +139,8 @@ public class CONTROLLER {
 	        		viewObj.setResultNum(modelObj.getResultValue());
 	              
 	          } catch (NumberFormatException nfex) {
-	             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	            // JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 	      }
 	  }
@@ -148,6 +156,8 @@ public class CONTROLLER {
 				  modelObj.sqrNum( FirstNum);
 				  if(modelObj.flag==true) {
 					  viewObj.clrResultNum();
+					  viewObj.setResultNumS("Not Valid");
+					  
 				  }
 				  else {
 					  viewObj.setResultNum(modelObj.getResultValue());
@@ -155,7 +165,8 @@ public class CONTROLLER {
 
 	          } 
 	          catch (NumberFormatException n) {
-		             JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+		             //JOptionPane.showMessageDialog(null,"Please enter a number, not string !!");
+	        	  viewObj.setResultNumS("Not Valid");
 	          }
 			
 		}

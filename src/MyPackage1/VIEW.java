@@ -206,6 +206,9 @@ public class VIEW {
 	public void setResultNum(double result) {
 		this.textField3.setText(Double.toString(result));
 	}
+	public void setResultNumS(String result) {
+		this.textField3.setText(result);
+	}
 	
 	public void clrResultNum() {
 		this.textField3.setText("");;

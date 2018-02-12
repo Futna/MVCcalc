@@ -35,7 +35,7 @@ public class MODEL {
 	public void divNum (double firstNum , double secondNum) {
 		flag=false;
 		if (secondNum == 0.0)	{
-		JOptionPane.showMessageDialog(null, "Divide by 0 !!");
+		//JOptionPane.showMessageDialog(null, "Divide by 0 !!");
 		flag=true;
 		}
 		else {
@@ -49,7 +49,7 @@ public class MODEL {
 		flag=false;
 		if (firstNum < 0.0) {
 			flag=true;
-			JOptionPane.showMessageDialog(null, "The Number is Negative !!");
+			//JOptionPane.showMessageDialog(null, "The Number is Negative !!");
 		}
 		this.resultValue= Math.sqrt(firstNum);
 	}
